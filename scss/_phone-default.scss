@@ -51,6 +51,72 @@ nav {
 	width: 100%;
 }
 
+/* FOOTER */
+
+main {
+	display: block;
+	min-height: 25em;
+	h1 {
+		font-size: 3em;
+		color: $h1_color;
+		padding-top: .75em;
+		font-weight: $heavy;
+	}
+	h2 {
+		font-size: 2em;
+		color: $h2_color;
+		padding-top: .5em;
+		font-weight: $heavy;
+	}
+	h3 {
+		font-size: 1.5em;
+		color: $h3_color;
+		padding-top: .5em;
+		font-weight: $heavy;
+	}
+	p {
+		font-size: 1em;
+		color: $text-color;
+		padding-top: .4em;
+		font-weight: $normal;
+		line-height: 130%;
+	}
+	strong {
+		font-weight: $heavy;
+	}
+	a {
+		color: $link_color;
+	}
+}
+
+/*end of the main area*/
+
+/*--COLUMNS--*/
+
+main {
+	.row {
+		clear: both;
+	}
+	.column {
+		padding: 0 $gutter;
+	}
+}
+
+/*--FOOTER--*/
+
+footer {
+	clear: both;
+	font-size: .8em;
+	text-align: center;
+	padding: 2em 0 .6em 0;
+	color: $brown;
+	font-weight: $heavy;
+	a {
+		color: $brown;
+	}
+}
+
+
 .clearfix:after {
 	content: "";
 	display: table;

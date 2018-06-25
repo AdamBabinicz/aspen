@@ -1,0 +1,51 @@
+/*-----SCSS COLOR ASSIGNMENTS -----*/
+$brown: #86461e;
+$orange: #ecbc4d;
+$blue: #a8c6ef; 
+$dkgrey: #858585;
+$ltgrey: #f0f0f3;
+ 
+$text_color: $dkgrey;
+$menu_color: $blue;
+$body_color: #fff;
+$link_color: $brown;
+
+$h1_color: $brown;
+$h2_color: $orange;
+$h3_color: $blue;
+
+/*-----SCSS FONT  ASSIGNMENTS -----*/
+$default_font_family: 'Quicksand', sans-serif;
+$normal: 400;
+$heavy: 700;
+
+/*-----SCSS GUTTER -----*/
+$gutter: 2%;
+
+
+/*-----SCSS MIXIN for MULTIPLE CLUMNS -----*/
+@mixin columns($count) {
+	-webkit-column-count: $count; /* Chrome, Safari, Opera */
+    -moz-column-count: $count; /* Firefox */
+    column-count: $count;
+	
+	-webkit-column-gap: $gutter; /* Chrome, Safari, Opera */
+    -moz-column-gap: $gutter; /* Firefox */
+    column-gap: $gutter;
+	
+	-webkit-column-rule: 1px outset #999; /* Chrome, Safari, Opera */
+    -moz-column-rule: 1px outset #999; /* Firefox */
+    column-rule: 1px outset #999;
+}
+
+/*-----SCSS MIXIN for BUTTONS -----*/
+@mixin button($color, $background) {
+	border-radius: 20px;
+	border: 1px solid #000;
+	width: 10em;
+	padding: .5em;
+	box-shadow:2px 2px 10px #999;
+	text-align:center;
+	color: $color;
+	background-color:$background;
+}
