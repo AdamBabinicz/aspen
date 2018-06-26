@@ -6,4 +6,13 @@
 		position: relative;
 		float: right;
 	}
+
+	/*---MAIN---*/
+	/*---COLUMNS---*/
+	main {
+		.width6 {
+			float: left;
+			width: 6 / 12 * 100%;
+		}
+	}
 }
