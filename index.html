@@ -6,16 +6,9 @@
 	<meta charset="UTF-8">
 	<title>Aspen Dental: Home</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	
 	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/caa?family=Quicksand:400,700">
-	<script>
-		$(document).ready(function() {
-			$(".nav-button").click(function() {
-				$(".nav-button,.primary-nav").toggleClass("open");
-			});
-		});
-
-	</script>
+	
 	<!-- [if lt IE 9]	-->
 	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 	<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
@@ -52,6 +45,14 @@
 	<footer>
 		<p>Dental Aspen <a href="+5514445557" class="tel">(551) 444-5557</a></p>
 	</footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script>
+	$(document).ready(function(){
+		$(".nav-button").click(function () {
+		$(".nav-button,.primary-nav").toggleClass("open");
+		});    
+	});
+</script>
 </body>
 
 </html>
