@@ -13,10 +13,6 @@ $h1_color: $brown;
 $h2_color: $orange;
 $h3_color: $blue;
 
-$h1_color: $brown;
-$h2_color: $orange;
-$h3_color: $blue;
-
 /*-----SCSS FONT  ASSIGNMENTS -----*/
 $default_font_family: 'Quicksand', sans-serif;
 $normal: 400;
@@ -27,7 +23,7 @@ $gutter: 2%;
 
 
 /*-----SCSS MIXIN for MULTIPLE CLUMNS -----*/
-@mixin columns($count) {
+@mixin columns($count, $line_color) {
 	-webkit-column-count: $count; /* Chrome, Safari, Opera */
     -moz-column-count: $count; /* Firefox */
     column-count: $count;
@@ -36,7 +32,7 @@ $gutter: 2%;
     -moz-column-gap: $gutter; /* Firefox */
     column-gap: $gutter;
 	
-	-webkit-column-rule: 1px outset #999; /* Chrome, Safari, Opera */
+	-webkit-column-rule: 1px outset $line_color #999; /* Chrome, Safari, Opera */
     -moz-column-rule: 1px outset #999; /* Firefox */
     column-rule: 1px outset #999;
 }

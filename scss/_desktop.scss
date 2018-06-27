@@ -65,9 +65,9 @@
 	}
 	/* end nav */
 	/*----- NEWSPAPER STYLE COLUMNS -----*/
-	/*.multicol {
-		@include columns(3);
-	}*/
+	.multicol {
+		@include columns(3, $dkgrey);
+	}
 }
 
 /*end of the media query */
